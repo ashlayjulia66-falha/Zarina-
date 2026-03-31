@@ -6,56 +6,43 @@
 
 <title>Zarina</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
 body {
   margin: 0;
   background: #0a0a0a;
-  color: #fff;
+  color: white;
   font-family: 'Inter', sans-serif;
 }
 
 header {
   position: fixed;
   width: 100%;
-  text-align: center;
   padding: 20px;
+  text-align: center;
   font-family: 'Playfair Display', serif;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
   background: rgba(0,0,0,0.4);
 }
 
 .hero {
   height: 100vh;
-  background: url('https://images.unsplash.com/photo-1603974372039-adc49044b6bd') center/cover;
+  background: url('https://images.unsplash.com/photo-1602751584552-8ba73aad10e1') center/cover;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 32px;
-  text-align: center;
-  background: rgba(0,0,0,0.5);
-  padding: 20px;
+  font-size: 40px;
 }
 
-.section {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.produtos {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-}
-
-.produto {
-  background: #111;
-  padding: 20px;
+.hero p {
+  margin-top: 10px;
+  opacity: 0.7;
 }
 
 .btn {
@@ -67,11 +54,40 @@ header {
   text-decoration: none;
 }
 
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.produto {
+  background: #111;
+  padding: 15px;
+}
+
+.produto img {
+  width: 100%;
+}
+
+.nome {
+  margin-top: 10px;
+}
+
+.preco {
+  opacity: 0.7;
+  font-size: 14px;
+}
+
 footer {
   padding: 30px;
   text-align: center;
   font-size: 12px;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 </style>
 </head>
@@ -81,22 +97,37 @@ footer {
 <header>ZARINA</header>
 
 <section class="hero">
-  <h1>Silêncio. A peça fala por você.</h1>
+  <div>
+    <h1>Seja sua própria realeza</h1>
+    <p>Moderno. Luxuoso. Inesquecível.</p>
+  </div>
 </section>
 
 <section class="section">
   <h2>Coleção</h2>
 
   <div class="produtos">
-    <div class="produto">Anel Elegance</div>
-    <div class="produto">Colar Lux</div>
+
+    <div class="produto">
+      <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638">
+      <div class="nome">Anel Imperial</div>
+      <div class="preco">R$ 129,90</div>
+      <a class="btn" href="https://wa.me/5511983050245?text=Quero%20o%20Anel%20Imperial">Faça sua encomenda</a>
+    </div>
+
+    <div class="produto">
+      <img src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9">
+      <div class="nome">Colar Majesty</div>
+      <div class="preco">R$ 159,90</div>
+      <a class="btn" href="https://wa.me/5511983050245?text=Quero%20o%20Colar%20Majesty">Faça sua encomenda</a>
+    </div>
+
   </div>
 
-  <a class="btn" href="https://wa.me/5511983050245">Comprar via WhatsApp</a>
 </section>
 
 <footer>
-  © Zarina — Elegância eterna
+  © Zarina — Feito para quem nasceu para brilhar
 </footer>
 
 </body>
