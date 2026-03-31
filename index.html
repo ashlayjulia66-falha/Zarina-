@@ -3,42 +3,59 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Zarina</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300&display=swap" rel="stylesheet">
 
 <style>
 body {
   margin: 0;
-  font-family: 'Georgia', serif;
-  background-color: #0a0a0a;
-  color: white;
+  background: #0a0a0a;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
 }
 
 header {
-  position: absolute;
-  top: 20px;
+  position: fixed;
   width: 100%;
   text-align: center;
-  font-size: 22px;
+  padding: 20px;
+  font-family: 'Playfair Display', serif;
   letter-spacing: 4px;
+  background: rgba(0,0,0,0.4);
 }
 
 .hero {
   height: 100vh;
-  background: url('https://images.unsplash.com/photo-1617038220319-276d3cfab638') center/cover no-repeat;
+  background: url('https://images.unsplash.com/photo-1603974372039-adc49044b6bd') center/cover;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  text-align: center;
   background: rgba(0,0,0,0.5);
   padding: 20px;
-  font-size: 28px;
 }
 
 .section {
   padding: 60px 20px;
   text-align: center;
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.produto {
+  background: #111;
+  padding: 20px;
 }
 
 .btn {
@@ -50,6 +67,12 @@ header {
   text-decoration: none;
 }
 
+footer {
+  padding: 30px;
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.6;
+}
 </style>
 </head>
 
@@ -58,14 +81,23 @@ header {
 <header>ZARINA</header>
 
 <section class="hero">
-  <h1>Você não usa joias. Você impõe presença.</h1>
+  <h1>Silêncio. A peça fala por você.</h1>
 </section>
 
 <section class="section">
   <h2>Coleção</h2>
-  <p>Peças que falam por você.</p>
-  <a class="btn" href="#">Ver produtos</a>
+
+  <div class="produtos">
+    <div class="produto">Anel Elegance</div>
+    <div class="produto">Colar Lux</div>
+  </div>
+
+  <a class="btn" href="https://wa.me/5511983050245">Comprar via WhatsApp</a>
 </section>
+
+<footer>
+  © Zarina — Elegância eterna
+</footer>
 
 </body>
 </html>
